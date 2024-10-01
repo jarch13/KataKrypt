@@ -17,6 +17,15 @@ Welcome to **KataKrypt**, a user-friendly application that allows you to securel
   - [Encryption](#encryption)
   - [Steganography](#steganography)
   - [Keyfiles](#keyfiles)
+- [How KataKrypt Works](#how-katakrypt-works)
+  - [Algorithms Used](#algorithms-used)
+    - [1. Key Derivation Function (KDF)](#1-key-derivation-function-kdf)
+    - [2. Linear Congruential Generator (LCG)](#2-linear-congruential-generator-lcg)
+    - [3. Stream Cipher](#3-stream-cipher)
+    - [4. Block Cipher](#4-block-cipher)
+    - [5. Steganography using Least Significant Bit (LSB) Technique](#5-steganography-using-least-significant-bit-lsb-technique)
+  - [Encryption Process Overview](#encryption-process-overview)
+  - [Decryption Process Overview](#decryption-process-overview)
 - [Getting Started](#getting-started)
   - [System Requirements](#system-requirements)
   - [Installation](#installation)
@@ -29,6 +38,10 @@ Welcome to **KataKrypt**, a user-friendly application that allows you to securel
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Troubleshooting](#troubleshooting)
 - [Support and Feedback](#support-and-feedback)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ---
 
@@ -47,7 +60,7 @@ In today's digital age, protecting your personal information is more important t
 ## Key Features
 
 - **User-Friendly Interface**: Simple and intuitive design.
-- **Strong Encryption**: Protects your data using a custom encryption algorithm.
+- **Strong Encryption**: Protects your data using custom encryption algorithms.
 - **Steganography**: Hides encrypted data within images.
 - **Password and Keyfile Protection**: Secure your data with a password, a keyfile, or both.
 - **Cross-Platform**: Compatible with Windows and Linux operating systems.
@@ -67,6 +80,97 @@ Steganography involves hiding data within other non-secret text or data. In Kata
 ### Keyfiles
 
 A keyfile is a file that contains cryptographic key material used for encryption and decryption. Keyfiles can be used in place of or in addition to a password, enhancing security by requiring possession of a specific file to access the encrypted data.
+
+---
+
+## How KataKrypt Works
+
+KataKrypt combines several cryptographic and data-hiding techniques to secure your messages. Below is a detailed explanation of the algorithms used and how they work together in the encryption and decryption processes.
+
+### Algorithms Used
+
+#### 1. Key Derivation Function (KDF)
+
+**Purpose**: Converts your password (and optional keyfile data) into a secure encryption key.
+
+**How it Works**:
+
+- **Input**: Your password and optional keyfile data.
+- **Process**: Uses cryptographic hashing (e.g., SHA-256) to generate a fixed-length key from the input.
+- **Output**: A secure key used for encryption and decryption.
+
+**Why It's Important**: The KDF ensures that even if your password is simple, the resulting key is strong and unpredictable.
+
+#### 2. Linear Congruential Generator (LCG)
+
+**Purpose**: Generates a pseudorandom keystream used in the encryption process.
+
+**How it Works**:
+
+- **Input**: The secure key from the KDF.
+- **Process**: Applies the LCG formula to produce a sequence of pseudorandom numbers.
+- **Output**: A keystream of random numbers.
+
+**Why It's Important**: The keystream adds randomness to the encryption, making it harder to decrypt without the key.
+
+#### 3. Stream Cipher
+
+**Purpose**: Encrypts your plaintext message by combining it with the keystream.
+
+**How it Works**:
+
+- **Input**: The plaintext message and the keystream from the LCG.
+- **Process**: Performs a bitwise XOR operation between the plaintext and the keystream.
+- **Output**: Encrypted ciphertext.
+
+**Why It's Important**: The stream cipher ensures that your message is securely encrypted using the keystream.
+
+#### 4. Block Cipher
+
+**Purpose**: Adds an additional layer of security by rearranging and substituting parts of the encrypted message.
+
+**How it Works**:
+
+- **Input**: The ciphertext from the stream cipher.
+- **Process**:
+  - **Substitution**: Replaces bytes in the data using a substitution box (S-box).
+  - **Permutation**: Rearranges the bytes according to a predefined pattern.
+- **Output**: Further encrypted data.
+
+**Why It's Important**: The block cipher obscures patterns in the data, making it even more secure.
+
+#### 5. Steganography using Least Significant Bit (LSB) Technique
+
+**Purpose**: Hides the encrypted data within an image file.
+
+**How it Works**:
+
+- **Input**: The doubly encrypted data and a cover image.
+- **Process**:
+  - Converts the encrypted data into binary form.
+  - Modifies the least significant bits of the image's pixels to embed the data.
+- **Output**: A stego image that appears unchanged but contains the hidden data.
+
+**Why It's Important**: Steganography conceals the fact that a message exists, providing an additional layer of security.
+
+### Encryption Process Overview
+
+1. **Key Generation**: KDF generates a secure key from your password and keyfile.
+2. **Keystream Generation**: LCG uses the key to produce a keystream.
+3. **Initial Encryption**: Stream cipher encrypts your message using the keystream.
+4. **Enhanced Encryption**: Block cipher further encrypts the data through substitution and permutation.
+5. **Data Hiding**: LSB steganography embeds the encrypted data into an image.
+
+### Decryption Process Overview
+
+1. **Data Extraction**: LSB steganography extracts the encrypted data from the image.
+2. **Reverse Block Cipher**: Applies inverse permutation and substitution to decrypt the data.
+3. **Stream Cipher Decryption**: Uses the keystream to decrypt the data back to plaintext.
+4. **Key Regeneration**: KDF regenerates the key from your password and keyfile to ensure the same keystream is produced.
+
+### Visual Representation
+
+*Consider adding a flowchart or diagram illustrating the encryption and decryption processes.*
 
 ---
 
@@ -315,10 +419,6 @@ Thank you for using KataKrypt. Your support and feedback are greatly appreciated
 
 ---
 
-*Note: Replace the image paths with the actual paths to your images in the repository. Ensure that the images are stored in a folder (e.g., `images/`) within your repository.*
-
----
-
 ## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on the code of conduct and the process for submitting pull requests.
@@ -334,3 +434,9 @@ For further inquiries, you can reach out via:
 ---
 
 **Happy Encrypting!**
+
+---
+
+*Note: Replace the image paths with the actual paths to your images in the repository. Ensure that the images are stored in a folder (e.g., `images/`) within your repository.*
+
+---
