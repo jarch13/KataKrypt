@@ -1,5 +1,3 @@
-Sure! Below is a comprehensive `README.md` file for your GitHub repository, derived from the latest `help.html` content you provided. I've formatted it using Markdown and included placeholders where you can insert images relevant to your project.
-
 ---
 
 # KataKrypt User Guide
