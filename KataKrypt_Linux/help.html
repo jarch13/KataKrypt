@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KataKrypt Help Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b2b2b;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #ff0000;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: auto;
+        }
+        code {
+            background-color: #333;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #ff0000;
+        }
+        .button {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>KataKrypt User Guide</h1>
+    <p>Welcome to <strong>KataKrypt</strong>, a user-friendly application that allows you to securely encrypt and decrypt your text files using steganography and keyfiles. This guide is designed for users with little to no experience in cryptography and will answer any questions you might have.</p>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#what-is-katakrypt">What is KataKrypt?</a></li>
+        <li><a href="#key-features">Key Features</a></li>
+        <li><a href="#understanding-basic-concepts">Understanding Basic Concepts</a>
+            <ul>
+                <li><a href="#encryption">Encryption</a></li>
+                <li><a href="#steganography">Steganography</a></li>
+                <li><a href="#keyfiles">Keyfiles</a></li>
+            </ul>
+        </li>
+        <li><a href="#getting-started">Getting Started</a>
+            <ul>
+                <li><a href="#system-requirements">System Requirements</a></li>
+                <li><a href="#installation">Installation</a></li>
+            </ul>
+        </li>
+        <li><a href="#using-katakrypt">Using KataKrypt</a>
+            <ul>
+                <li><a href="#encrypting-a-file">Encrypting a File</a></li>
+                <li><a href="#decrypting-a-file">Decrypting a File</a></li>
+            </ul>
+        </li>
+        <li><a href="#authentication-options">Authentication Options</a>
+            <ul>
+                <li><a href="#password-guidelines">Password Guidelines</a></li>
+                <li><a href="#using-keyfiles">Using Keyfiles</a></li>
+            </ul>
+        </li>
+        <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+        <li><a href="#support-and-feedback">Support and Feedback</a></li>
+    </ul>
+
+    <h2 id="introduction">Introduction</h2>
+    <p>In today's digital age, protecting your personal information is more important than ever. <strong>KataKrypt</strong> provides an easy way to secure your sensitive data by encrypting it and hiding it within images. With the addition of keyfiles, you have even more control over your data's security. This guide will walk you through every step, ensuring you can use the program confidently, even if you're new to encryption.</p>
+
+    <h2 id="what-is-katakrypt">What is KataKrypt?</h2>
+    <p><strong>KataKrypt</strong> is a software application that encrypts text files and embeds the encrypted data into images using steganography. By utilizing passwords and keyfiles, your sensitive information is both encrypted and hidden, adding multiple layers of security.</p>
+
+    <h2 id="key-features">Key Features</h2>
+    <ul>
+        <li><strong>User-Friendly Interface:</strong> Simple and intuitive design.</li>
+        <li><strong>Strong Encryption:</strong> Protects your data using a custom encryption algorithm.</li>
+        <li><strong>Steganography:</strong> Hides encrypted data within images.</li>
+        <li><strong>Password and Keyfile Protection:</strong> Secure your data with a password, a keyfile, or both.</li>
+        <li><strong>Cross-Platform:</strong> Compatible with Windows and Linux operating systems.</li>
+    </ul>
+
+    <h2 id="understanding-basic-concepts">Understanding Basic Concepts</h2>
+
+    <h3 id="encryption">Encryption</h3>
+    <p>Encryption is the process of converting readable data (plaintext) into an unreadable format (ciphertext) using a password or key. Only someone with the correct password or key can decrypt and read the original data.</p>
+
+    <h3 id="steganography">Steganography</h3>
+    <p>Steganography involves hiding data within other non-secret text or data. In KataKrypt, your encrypted text is hidden within image files, making it inconspicuous and adding an extra layer of protection.</p>
+
+    <h3 id="keyfiles">Keyfiles</h3>
+    <p>A keyfile is a file that contains cryptographic key material used for encryption and decryption. Keyfiles can be used in place of or in addition to a password, enhancing security by requiring possession of a specific file to access the encrypted data.</p>
+
+    <h2 id="getting-started">Getting Started</h2>
+
+    <h3 id="system-requirements">System Requirements</h3>
+    <ul>
+        <li><strong>Operating System:</strong> Windows 7 or later, or Linux with Python 3 installed</li>
+        <li><strong>Disk Space:</strong> At least 50 MB of free space</li>
+        <li><strong>Permissions:</strong> Ability to read and write files</li>
+    </ul>
+
+    <h3 id="installation">Installation</h3>
+    <p>You can download KataKrypt from the GitHub repository:</p>
+    <p>
+        <a href="https://github.com/jarch13/KataKrypt.git">https://github.com/jarch13/KataKrypt.git</a>
+    </p>
+    <h4>For Windows Users:</h4>
+    <ol>
+        <li><strong>Download</strong> or <strong>Clone</strong> the KataKrypt repository from GitHub.</li>
+        <li>Navigate to the <code>KataKrypt_Windows</code> folder.</li>
+        <li><strong>Double-click</strong> the <code>KataKrypt.exe</code> file to run the program—no installation is required.</li>
+    </ol>
+    <h4>For Linux Users:</h4>
+    <ol>
+        <li><strong>Ensure</strong> that Python 3 is installed on your system. You can check by running:
+            <pre><code>python3 --version</code></pre>
+            If not installed, you can install it using your package manager, for example:
+            <pre><code>sudo apt-get install python3</code></pre>
+        </li>
+        <li><strong>Download</strong> or <strong>Clone</strong> the KataKrypt repository from GitHub.</li>
+        <li>Open a terminal and navigate to the <code>KataKrypt_Linux</code> folder:
+            <pre><code>cd /path/to/KataKrypt/KataKrypt_Linux</code></pre>
+        </li>
+        <li><strong>Run</strong> the program using Python 3:
+            <pre><code>python3 KataKrypt.py</code></pre>
+        </li>
+    </ol>
+
+    <h2 id="using-katakrypt">Using KataKrypt</h2>
+
+    <h3 id="encrypting-a-file">Encrypting a File</h3>
+    <ol>
+        <li><strong>Open KataKrypt</strong> by running the executable (Windows) or Python script (Linux).</li>
+        <li><strong>Access the Encryption Feature</strong>:
+            <ul>
+                <li>Click on the <strong>Encrypt</strong> button on the main screen <em>or</em></li>
+                <li>Go to <strong>File &gt; Encrypt</strong> from the menu bar.</li>
+            </ul>
+        </li>
+        <li><strong>Select a Text File</strong>:
+            <ul>
+                <li>A file dialog will appear.</li>
+                <li>Navigate to and select the <code>.txt</code> file you wish to encrypt.</li>
+                <li>Click <strong>Open</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Choose Authentication Method</strong>:
+            <ul>
+                <li>A dialog box will appear with options to use a <strong>Password</strong>, a <strong>Keyfile</strong>, or <strong>Both</strong>.</li>
+                <li><strong>Use Password</strong>:
+                    <ul>
+                        <li>Check the <strong>Use Password</strong> box (checked by default).</li>
+                        <li>Enter a strong password in the field provided.</li>
+                    </ul>
+                </li>
+                <li><strong>Use Keyfile</strong>:
+                    <ul>
+                        <li>Check the <strong>Use Keyfile</strong> box.</li>
+                        <li>Click <strong>Browse</strong> to select an existing keyfile <em>or</em> click <strong>Generate Keyfile</strong> to create a new one.</li>
+                        <li>If generating, choose a save location and remember where you saved it.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Enter Password and/or Keyfile</strong>:
+            <ul>
+                <li>Provide the necessary authentication information based on your selections.</li>
+                <li>Click <strong>Submit</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Choose Save Location for Encrypted Image</strong>:
+            <ul>
+                <li>A save dialog will appear.</li>
+                <li>Choose the destination folder and enter a filename for the encrypted image.</li>
+                <li>Ensure the file extension is <code>.bmp</code>.</li>
+                <li>Click <strong>Save</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Confirmation</strong>:
+            <ul>
+                <li>You will receive a confirmation message once the encryption and embedding are complete.</li>
+                <li>Click <strong>OK</strong> to finish.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3 id="decrypting-a-file">Decrypting a File</h3>
+    <ol>
+        <li><strong>Open KataKrypt</strong> if not already running.</li>
+        <li><strong>Access the Decryption Feature</strong>:
+            <ul>
+                <li>Click on the <strong>Decrypt</strong> button on the main screen <em>or</em></li>
+                <li>Go to <strong>File &gt; Decrypt</strong> from the menu bar.</li>
+            </ul>
+        </li>
+        <li><strong>Select an Encrypted Image</strong>:
+            <ul>
+                <li>A file dialog will appear.</li>
+                <li>Navigate to and select the <code>.bmp</code> image containing the encrypted data.</li>
+                <li>Click <strong>Open</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Enter Authentication Information</strong>:
+            <ul>
+                <li>Enter the <strong>same password and/or keyfile</strong> used during encryption.</li>
+                <li>Use the <strong>Browse</strong> button to select your keyfile if used.</li>
+                <li>Click <strong>Submit</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Choose Save Location for Decrypted Text</strong>:
+            <ul>
+                <li>A save dialog will appear.</li>
+                <li>Choose the destination folder and enter a filename for the decrypted text file.</li>
+                <li>Click <strong>Save</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Confirmation</strong>:
+            <ul>
+                <li>You will receive a confirmation message once the decryption is complete.</li>
+                <li>Click <strong>OK</strong> to finish.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2 id="authentication-options">Authentication Options</h2>
+
+    <h3 id="password-guidelines">Password Guidelines</h3>
+    <p>Creating a strong password is crucial for the security of your data.</p>
+    <ul>
+        <li><strong>Minimum Length:</strong> 8 characters</li>
+        <li><strong>Include:</strong>
+            <ul>
+                <li>Uppercase letters (A-Z)</li>
+                <li>Lowercase letters (a-z)</li>
+                <li>Numbers (0-9)</li>
+                <li>Special characters (e.g., !, @, #, $)</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>Tips:</strong></p>
+    <ul>
+        <li>Avoid common words or phrases.</li>
+        <li>Do not use personal information like names or birthdays.</li>
+        <li>Use a combination of unrelated words and characters.</li>
+    </ul>
+
+    <h3 id="using-keyfiles">Using Keyfiles</h3>
+    <p>A keyfile adds an extra layer of security by requiring a specific file to unlock your encrypted data.</p>
+
+    <h4>Generating a Keyfile</h4>
+    <ol>
+        <li>During the authentication step, check the <strong>Use Keyfile</strong> box.</li>
+        <li>Click <strong>Generate Keyfile</strong>.</li>
+        <li>Choose a save location and filename for your keyfile.</li>
+        <li>Keep your keyfile in a secure location.</li>
+    </ol>
+
+    <h4>Using an Existing Keyfile</h4>
+    <ol>
+        <li>Check the <strong>Use Keyfile</strong> box.</li>
+        <li>Click <strong>Browse</strong> and navigate to your keyfile.</li>
+        <li>Select the keyfile and click <strong>Open</strong>.</li>
+    </ol>
+
+    <h4>Security Tips</h4>
+    <ul>
+        <li>Store your keyfile in a secure, backed-up location.</li>
+        <li>Do not share your keyfile with others.</li>
+        <li>Use both a password and a keyfile for maximum security.</li>
+    </ul>
+
+    <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+    <ul>
+        <li><strong>Can I encrypt any type of file?</strong> Currently, KataKrypt supports encryption of <code>.txt</code> files.</li>
+        <li><strong>What if I forget my password or lose my keyfile?</strong> For security reasons, passwords and keyfiles are not recoverable. If you forget your password or lose your keyfile, you will not be able to decrypt the data.</li>
+        <li><strong>Is it more secure to use both a password and a keyfile?</strong> Yes, using both provides two-factor authentication, significantly enhancing security.</li>
+    </ul>
+
+    <h2 id="troubleshooting">Troubleshooting</h2>
+    <p><strong>Problem:</strong> Error during encryption or decryption.<br>
+       <strong>Solution:</strong> Ensure you are selecting the correct file types and that you have the necessary file permissions. Verify that the password and keyfile entered during decryption match those used during encryption.</p>
+
+    <p><strong>Problem:</strong> I can't find my keyfile.<br>
+       <strong>Solution:</strong> Check the location where you saved the keyfile during generation. If you cannot locate it, and you used only a keyfile (without a password), you will not be able to decrypt your data.</p>
+
+    <h2 id="support-and-feedback">Support and Feedback</h2>
+    <p>If you need assistance or have feedback, please visit our GitHub repository:</p>
+    <p>
+        <a href="https://github.com/jarch13/KataKrypt.git">https://github.com/jarch13/KataKrypt.git</a>
+    </p>
+    <p>You can open an issue or contribute to the project there.</p>
+
+</div>
+
+</body>
+</html>
