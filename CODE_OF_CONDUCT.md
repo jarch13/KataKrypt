@@ -2,11 +2,11 @@
 
 ## Code of Conduct
 
-### Our Pledge
+### Pledge
 
 In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project a harassment-free experience for everyone.
 
-### Our Standards
+### Standards
 
 - Be respectful and considerate.
 - Communicate openly and thoughtfully.
@@ -15,7 +15,7 @@ In the interest of fostering an open and welcoming environment, we as contributo
 
 ### Enforcement
 
-Instances of unacceptable behavior may be reported by contacting the project team at [https://github.com/jarch13/KataKrypt/issues](https://github.com/jarch13/KataKrypt/issues).
+Instances of unacceptable behavior may be reported by contacting the project owner at [https://github.com/jarch13/KataKrypt/issues](https://github.com/jarch13/KataKrypt/issues).
 
 ---
 
