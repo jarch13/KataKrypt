@@ -15,8 +15,7 @@ In the interest of fostering an open and welcoming environment, we as contributo
 
 ### Enforcement
 
-Instances of unacceptable behavior may be reported by contacting the project team at [contact information].
+Instances of unacceptable behavior may be reported by contacting the project team at [https://github.com/jarch13/KataKrypt/issues](https://github.com/jarch13/KataKrypt/issues).
 
 ---
 
-**Note**: Replace `[contact information]` with your preferred method of contact.
