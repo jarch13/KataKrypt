@@ -6,7 +6,6 @@ Welcome to **KataKrypt**, a user-friendly application that allows you to securel
 
 ![KataKrypt Logo](images/katakrypt_logo.png)
 
-*Insert your application's logo above by replacing the image path.*
 
 ## Table of Contents
 
@@ -168,9 +167,6 @@ KataKrypt combines several cryptographic and data-hiding techniques to secure yo
 3. **Stream Cipher Decryption**: Uses the keystream to decrypt the data back to plaintext.
 4. **Key Regeneration**: KDF regenerates the key from your password and keyfile to ensure the same keystream is produced.
 
-### Visual Representation
-
-*Consider adding a flowchart or diagram illustrating the encryption and decryption processes.*
 
 ---
 
@@ -240,7 +236,6 @@ You can download KataKrypt from the GitHub repository:
 
    ![Encrypt Button](images/encrypt_button.png)
 
-   *Insert a screenshot of the main screen highlighting the Encrypt button.*
 
 3. **Select a Text File**:
 
@@ -265,7 +260,6 @@ You can download KataKrypt from the GitHub repository:
 
    ![Authentication Options](images/authentication_options.png)
 
-   *Insert a screenshot of the authentication dialog.*
 
 5. **Enter Password and/or Keyfile**:
 
@@ -296,7 +290,6 @@ You can download KataKrypt from the GitHub repository:
 
    ![Decrypt Button](images/decrypt_button.png)
 
-   *Insert a screenshot of the main screen highlighting the Decrypt button.*
 
 3. **Select an Encrypted Image**:
 
@@ -434,9 +427,5 @@ For further inquiries, you can reach out via:
 ---
 
 **Happy Encrypting!**
-
----
-
-*Note: Replace the image paths with the actual paths to your images in the repository. Ensure that the images are stored in a folder (e.g., `images/`) within your repository.*
 
 ---
