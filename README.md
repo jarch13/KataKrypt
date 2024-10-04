@@ -392,7 +392,7 @@ A keyfile adds an extra layer of security by requiring a specific file to unlock
 
 ## Support and Feedback
 
-If you need assistance or have feedback, please visit our GitHub repository:
+If you need assistance or have feedback, please visit my GitHub repository:
 
 [https://github.com/jarch13/KataKrypt.git](https://github.com/jarch13/KataKrypt.git)
 
